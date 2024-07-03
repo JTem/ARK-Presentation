@@ -171,7 +171,7 @@ def plot_dual_quaternion_evaluation(trajectory, time_vec):
         dqd_ddot_list.append(dq_ddot.dual.asVector().flatten())
 
 
-    fig, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(6, 1, figsize=(12, 10))
+    fig, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(6, 1, figsize=(12, 9))
     fig.suptitle(r"UDQ pose and derivatives of the online interpolation Algorithm")
 
     ax1.plot(time_vec, dqr_list, label = ["$w_r$", "$x_r$", "$y_r$", "$z_r$"])
